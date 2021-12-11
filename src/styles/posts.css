@@ -1,0 +1,56 @@
+.posts-container {
+  padding: 30px;
+}
+
+.posts-container .post-container {
+  padding: 30px;
+  background-color: rgba(77, 74, 74, 0.3);
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.posts-container .post-container h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.posts-container .post-container h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.posts-container .post-container .comments-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.posts-container .post-container .comments-container img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.posts-container .post-container p {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.posts-container .post-container button {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 5px;
+}
+
+.posts-container .post-container button:hover {
+  background-color: rgba(77, 74, 74, 0.3);
+  color: #fff;
+}
+/*# sourceMappingURL=posts.css.map */

@@ -1,0 +1,41 @@
+.fullpost-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 30px;
+}
+
+.fullpost-container button {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 5px;
+}
+
+.fullpost-container button:hover {
+  background-color: rgba(77, 74, 74, 0.3);
+  color: #fff;
+}
+
+.fullpost-container h1 {
+  font-size: 4rem;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.fullpost-container h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: -5px;
+}
+
+.fullpost-container p {
+  font-size: 1.5rem;
+}
+
+.fullpost-container .post-text {
+  padding-top: 30px;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=Fullpost.css.map */

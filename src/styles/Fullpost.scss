@@ -1,0 +1,42 @@
+@mixin custom-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgba(77, 74, 74, 0.3);
+        color: #fff;
+    }
+}
+
+.fullpost-container {
+    flex-grow: 1;
+    padding: 30px;
+
+    button {
+        @include custom-btn();
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding-top: 20px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-top: -5px;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .post-text {
+        padding-top: 30px;
+        font-size: 1.8rem;
+    }
+}
