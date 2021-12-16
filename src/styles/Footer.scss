@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: rgba(77, 74, 74, 0.3);
+
+
+    .github-button {
+        border: none;
+        background-image: url('../images/github-icon.svg');
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        transition: transform .5s ease-in-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}

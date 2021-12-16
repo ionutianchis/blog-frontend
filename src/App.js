@@ -4,6 +4,7 @@ import Posts from './components/Posts'
 import './styles/App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Fullpost from './components/Fullpost';
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -26,18 +27,22 @@ const App = () => {
   }, [])
   
   return (
-    <div className="container">
-      <BrowserRouter>
-        <Navbar />
+		<div className='container'>
+			<BrowserRouter>
+				<Navbar />
 
-        <Routes>
-
-          <Route exact path='/blog-api/' element={<Posts posts={posts} />} />
-          <Route exact path='/blog-api/:id' element={<Fullpost/>}/>
-
+				<Routes>
+					<Route
+						exact
+						path='/blog-api/'
+						element={<Posts posts={posts} />}
+					/>
+					<Route exact path='/blog-api/:id' element={<Fullpost />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+        
+				<Footer />
+			</BrowserRouter>
+		</div>
   )
 }
 
