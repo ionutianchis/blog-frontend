@@ -34,10 +34,10 @@ const App = () => {
 				<Routes>
 					<Route
 						exact
-						path='/blog-api/'
+						path='/blog-frontend/'
 						element={<Posts posts={posts} />}
 					/>
-					<Route exact path='/blog-api/:id' element={<Fullpost />} />
+					<Route exact path='/blog-frontend/:id' element={<Fullpost />} />
         </Routes>
         
 				<Footer />
