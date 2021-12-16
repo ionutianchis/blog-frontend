@@ -5,33 +5,33 @@ import formatDistance from 'date-fns/formatDistance'
 
 const Posts = ({ posts }) => {
 	
+	const filteredPosts = posts.filter(x => x.visible === true)
+
     const navigate = useNavigate()
 
     return (
-        <div className='posts-container'>
-
-         {
-            posts.map((item, index) => {
-                return (
+		<div className='posts-container'>
+			{filteredPosts.map((item, index) => {
+				return (
 					<div key={index} className='post-container'>
 						<h2>{item.title}</h2>
 						<h3> by {item.author}</h3>
-						{item.timestamp &&
+						{item.timestamp && (
 							<p>
 								{formatDistance(
 									new Date(item.timestamp),
 									new Date()
-									)}{' '}
+								)}{' '}
 								ago
 							</p>
-						}
+						)}
 
 						<div className='comments-container'>
 							<img
 								src={require('../images/comments.svg').default}
 								alt=''
 							/>
- 							{item.comments.length}
+							{item.comments.length}
 						</div>
 
 						<button
@@ -40,10 +40,9 @@ const Posts = ({ posts }) => {
 						</button>
 					</div>
 				)
-            })
-        }
-        </div>
-    )
+			})}
+		</div>
+	)
 }
 
 export default Posts
