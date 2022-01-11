@@ -27,8 +27,15 @@ const Fullpost = () => {
 
     useEffect(() => {
 		fetchPostData()
+
+		const interval = setInterval(() => {
+			fetchPostData()
+		}, 10000)
+
+		return () => clearInterval(interval)
+
 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [id, comment])
+	}, [id])
 
 	// Comment change
 	const handleChange = (e) => {
@@ -36,7 +43,8 @@ const Fullpost = () => {
 			...comment,
 			[e.target.name]: e.target.value,
 		})
-    }
+	}
+	
 	// Comment submit
     const handleSubmit = event => {
         event.preventDefault()
@@ -51,12 +59,15 @@ const Fullpost = () => {
 				reference: id,
 			}),
 		}).catch((err) => console.log(err))
+		const newArr = [...currPost.comments]
+		newArr.push(comment)
+		setCurrPost({ ...currPost, comments: [...newArr] })
 		setComment({})
     }
 
     return (
 		<div className='fullpost-container'>
-			<button onClick={() => navigate('/blog-api/')}>Go back</button>
+			<button onClick={() => navigate('/blog-frontend/')}>Go back</button>
 
 			<h1>{currPost.title}</h1>
 

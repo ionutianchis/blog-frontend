@@ -35,7 +35,7 @@ const Posts = ({ posts }) => {
 						</div>
 
 						<button
-							onClick={() => navigate('/blog-api/' + item._id)}>
+							onClick={() => navigate('/blog-frontend/' + item._id)}>
 							Open post
 						</button>
 					</div>
