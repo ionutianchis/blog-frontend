@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/blog-frontend/static/css/main.ec22e328.chunk.css",
-    "main.js": "/blog-frontend/static/js/main.7fe1b6b3.chunk.js",
-    "main.js.map": "/blog-frontend/static/js/main.7fe1b6b3.chunk.js.map",
+    "main.js": "/blog-frontend/static/js/main.7136b629.chunk.js",
+    "main.js.map": "/blog-frontend/static/js/main.7136b629.chunk.js.map",
     "runtime-main.js": "/blog-frontend/static/js/runtime-main.dcaee2be.js",
     "runtime-main.js.map": "/blog-frontend/static/js/runtime-main.dcaee2be.js.map",
-    "static/js/2.8e86fe8a.chunk.js": "/blog-frontend/static/js/2.8e86fe8a.chunk.js",
-    "static/js/2.8e86fe8a.chunk.js.map": "/blog-frontend/static/js/2.8e86fe8a.chunk.js.map",
+    "static/js/2.2320a916.chunk.js": "/blog-frontend/static/js/2.2320a916.chunk.js",
+    "static/js/2.2320a916.chunk.js.map": "/blog-frontend/static/js/2.2320a916.chunk.js.map",
     "index.html": "/blog-frontend/index.html",
     "static/css/main.ec22e328.chunk.css.map": "/blog-frontend/static/css/main.ec22e328.chunk.css.map",
-    "static/js/2.8e86fe8a.chunk.js.LICENSE.txt": "/blog-frontend/static/js/2.8e86fe8a.chunk.js.LICENSE.txt",
+    "static/js/2.2320a916.chunk.js.LICENSE.txt": "/blog-frontend/static/js/2.2320a916.chunk.js.LICENSE.txt",
     "static/media/comments.svg": "/blog-frontend/static/media/comments.475722ba.svg",
     "static/media/Footer.css": "/blog-frontend/static/media/github-icon.a9182f20.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dcaee2be.js",
-    "static/js/2.8e86fe8a.chunk.js",
+    "static/js/2.2320a916.chunk.js",
     "static/css/main.ec22e328.chunk.css",
-    "static/js/main.7fe1b6b3.chunk.js"
+    "static/js/main.7136b629.chunk.js"
   ]
 }
